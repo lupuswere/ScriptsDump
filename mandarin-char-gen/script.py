@@ -37,7 +37,7 @@ def main():
 
     # Generate a PDF for each character
     for idx, char in enumerate(characters):
-        file_name = f'output/character_{idx + 1}.pdf'
+        file_name = f'output/{char}.pdf'
         os.makedirs(os.path.dirname(file_name), exist_ok=True)
         create_pdf(char, file_name)
         print(f"Generated PDF for '{char}' as '{file_name}'")
